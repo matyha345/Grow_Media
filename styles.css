@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* *{
+    outline: 1px solid #333;
+  } */
+/* ============================= Reset ============================= */
+/* ============================= Reset ============================= */
+
+input {
+  background: transparent;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  background: transparent;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+}
+
+/* ============================= Main ============================= */
+/* ============================= Main ============================= */
+
+:root {
+  --text-gray: #9797af;
+  --text-redOrange: #ff3b30;
+  --text-green: #0cb477;
+  --text-blue: #0000ff;
+  --after-orange: #f55123;
+  --error: #ff0000;
+
+  --alert: #dff0d8;
+  --alert-border: #3c763d;
+
+  --btn: #337ab7;
+  --btn-hover: #286090;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.main {
+  padding: 80px 30px;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 24px;
+  margin: 0 auto;
+  font-style: normal;
+}
+
+.error {
+  color: var(--error);
+  font-size: 14px;
+}
+
+.remove {
+    display: none;
+  }
+
+  
+/* ================= myForm   ================= */
+/* ================= myForm   ================= */
+
+.myForm {
+  margin-top: 16px;
+}
+
+.myForm__header {
+  display: flex;
+}
+
+.myForm__recipient {
+  display: flex;
+  justify-content: center;
+}
+
+.myForm__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: -0.24px;
+}
+
+.section__top-recipient {
+  margin-bottom: 21px;
+}
+
+.myForm__form {
+  max-width: 400px;
+}
+.myForm__form-fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.myForm__form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+.myForm__form-wrap:first-child {
+  margin-top: 10px;
+}
+
+.myForm__form-label {
+  position: absolute;
+  left: 0;
+  top: -3px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-gray);
+}
+
+.myForm__form-label-top {
+  top: -24px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.section__recipient-form__label-top {
+  top: -24px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.myForm__form-input {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 5px;
+}
+
+.myForm__form-input--wrong {
+  border-bottom: 1px solid var(--error);
+  color: var(--error);
+}
+
+.myForm__form-info {
+  position: absolute;
+  left: 0;
+  bottom: -19px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.myForm__form--input--wrong {
+  border-bottom: 1px solid var(--after-orange);
+  color: var(--after-orange);
+}
+
+.myForm__form-error {
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--error);
+}
+
+.myForm__form-input:focus + .myForm__form-label {
+  top: -24px;
+  opacity: 1;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.myForm__industry {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.myForm__industry-input--turnover {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.myForm__industry-input--turnover input {
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.myForm__industry-input--turnover input::placeholder {
+  padding-left: 5px;
+}
+.myForm__industry-content {
+  display: flex;
+}
+.myForm__industry-option {
+  margin-top: 20px;
+}
+
+.myForm__industry-checkbox-block {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.myForm__industry-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  margin-right: 5px;
+}
+.myForm__industry-default {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.myForm__industry-default:checked + .myForm__industry-checkbox--custom {
+  background: url("./img/image.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid var(--text-blue);
+}
+.myForm__industry-checkbox--custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.myForm__industry-checkbox-text {
+  cursor: pointer;
+}
+
+.myForm__industry-button {
+  display: flex;
+  justify-content: end;
+}
+
+.myForm__success-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.myForm__success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 287px;
+  height: 30px;
+  background-color: var(--alert);
+  border: 1px solid var(--alert-border);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--btn);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: normal;
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--btn-hover);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}

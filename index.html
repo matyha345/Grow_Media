@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Grow Media</title>
+</head>
+
+<body>
+
+    <section class="main">
+        <div class="container">
+            <div class="myForm__recipient">
+                <div class="section__container recipient ">
+                    <div class="myForm__header">
+                        <h2 class="myForm__title">
+                            Личная информация
+                        </h2>
+                    </div>
+                    <form action="#" id="form" class="myForm__form">
+
+                        <fieldset class="myForm__form-fieldset">
+                            <div class="myForm__form-wrap">
+
+                                <input class="myForm__form-input" type="text" id="name" name="name">
+                                <label class="myForm__form-label" for="name"> Имя </label>
+
+                            </div>
+                            <div class="myForm__form-wrap">
+
+                                <input class="myForm__form-input" type="email" id="email" name="email">
+                                <label class="myForm__form-label" for="email"> Email </label>
+
+                            </div>
+                            <div class="myForm__form-wrap">
+
+                                <input class="myForm__form-input" type="text" id="tel" name="tel">
+                                <label class="myForm__form-label" for="tel"> Телефон </label>
+
+                            </div>
+                        </fieldset>
+
+                        <div class="myForm__industry">
+                            <h2 class="myForm__title">Информация об индустрии</h2>
+                            <label class="myForm__industry-input--turnover" for="expectedRevenue">
+                                <input type="number" step="0.05" id="expectedRevenue" placeholder="Ожидаемый оборот">
+                                <span class="error" id="revenueError"></span>
+                            </label>
+
+                            <div class="myForm__industry-content">
+
+                                <select class="myForm__industry-option" id="industry">
+                                    <option disabled selected>Выберите индустрию</option>
+                                    <option value="industry1">Индустрия 1</option>
+                                    <option value="industry2">Индустрия 2</option>
+                                    <option value="industry3">Индустрия 3</option>
+                                </select>
+
+                                <div class="myForm__industry-checkbox-block">
+                                    <label class="myForm__industry-checkbox">
+                                        <input class="myForm__industry-default" id="acceptRules" type="checkbox">
+                                        <span class="myForm__industry-checkbox--custom"></span>
+                                    </label>
+                                    <label for="acceptRules" class="myForm__industry-checkbox-text ">Я принимаю правила
+                                        сервиса</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myForm__industry-button">
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </form>
+
+                    <div class="myForm__success-wrapper ">
+                        <div class="myForm__success-message fade" id="successMessage" style="display: none;">
+                            <p>Спасибо! Ваша заявка принята</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
