@@ -317,7 +317,7 @@ body {
 }
 
 .myForm__success-message {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 287px;
