@@ -115,10 +115,9 @@ body {
 }
 
 .remove {
-    display: none;
-  }
+  display: none;
+}
 
-  
 /* ================= myForm   ================= */
 /* ================= myForm   ================= */
 
@@ -318,7 +317,7 @@ body {
 }
 
 .myForm__success-message {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 287px;
@@ -361,4 +360,23 @@ button[type="submit"]:hover {
   animation-name: fadeIn;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
+}
+
+@media (max-width: 650px) {
+    .myForm__title {
+        font-size: 16px;
+    }
+    .myForm__industry-content {
+        flex-direction: column;
+    }
+    .myForm__industry-checkbox-text {
+        font-size: 14px;
+    }
+    .myForm__success-message {
+        width: 190px;
+        text-align: center;
+    }
+    .error {
+      font-size: 12px;
+    }
 }
