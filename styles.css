@@ -369,6 +369,10 @@ button[type="submit"]:hover {
   .myForm__industry-content {
     flex-direction: column;
   }
+  .myForm__industry-checkbox-block{
+    margin-top: 25px;
+    margin-left: 0;
+  }
   .myForm__industry-checkbox-text {
     font-size: 14px;
   }
