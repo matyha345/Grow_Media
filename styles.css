@@ -98,8 +98,8 @@ body {
   min-width: 320px;
 }
 
-.main {
-  padding: 80px 30px;
+.main{
+  margin-top: 98px;
 }
 
 .container {
@@ -363,20 +363,20 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 650px) {
-    .myForm__title {
-        font-size: 16px;
-    }
-    .myForm__industry-content {
-        flex-direction: column;
-    }
-    .myForm__industry-checkbox-text {
-        font-size: 14px;
-    }
-    .myForm__success-message {
-        width: 190px;
-        text-align: center;
-    }
-    .error {
-      font-size: 12px;
-    }
+  .myForm__title {
+    font-size: 16px;
+  }
+  .myForm__industry-content {
+    flex-direction: column;
+  }
+  .myForm__industry-checkbox-text {
+    font-size: 14px;
+  }
+  .myForm__success-message {
+    width: 190px;
+    text-align: center;
+  }
+  .error {
+    font-size: 12px;
+  }
 }
