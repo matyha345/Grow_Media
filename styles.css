@@ -377,7 +377,7 @@ button[type="submit"]:hover {
     font-size: 14px;
   }
   .myForm__success-message {
-    width: 190px;
+    width: 170px;
     text-align: center;
   }
   .error {
